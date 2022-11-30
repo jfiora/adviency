@@ -1,21 +1,8 @@
-import { useState } from 'react';
+import Day1 from './days/day 1/day1';
 import './App.css';
 
 function App() {
-    const [gifts, setGifts] = useState(['Socks', 'Candies', 'More socks']);
-
-    return (
-        <div className='App'>
-            <h1>Gifts:</h1>
-            <ul>
-                {gifts
-                    ? gifts.map((gift, idx) => {
-                          return <li key={idx}>{gift}</li>;
-                      })
-                    : null}
-            </ul>
-        </div>
-    );
+    return <Day1 />;
 }
 
 export default App;
